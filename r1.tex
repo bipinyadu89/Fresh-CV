@@ -1,0 +1,195 @@
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{times}
+\usepackage{tocloft}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\title{BipinYadu}
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.75}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+}
+ \hypersetup{linktocpage}
+ 
+\urlstyle{same}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+%-----------------------------------------------------------
+%Insert IIT Madras Logo 
+\begin{tabular*}{7in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}%{l@{\extracolsep{\fill}}r}
+   %\multirow{4}{*}{\includegraphics[scale=0.19]{iitmlogo}}\\
+  
+%-----------------------------------------------------------  
+   \textbf{\huge Bipin Yadu} \hfill \\
+    \hfill \linebreak
+  %\small   \\
+  \small Email: bipinyadu89@gmail.com\\
+  \small Contact: (+91) 7898873009 \\
+  \small Github: \url{https://www.github.com/bipinyadu89}
+  \end{tabular*}
+\\
+\resheading{Profile}
+I am humble in interaction and have a passion for learning. I am a Mechanical Engineer who can code in \textbf{C++, MATLAB and Python}. I have also worked extensively with large data sets in \textbf{Excel} and have a good command over \textbf{Data Visualization} techniques, manipulation and \textbf{Solvers}. I am also good in writing \textbf{Reports and Applications}. In future, I would like to get a Ph.D and shape my career in the field of Research in my area of interest.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item
+    \ressubheading{Master of Technology (\normalfont{Industrial Engineering and Management)}}{2014-2016}{National Institute of Technology Raipur}{Raipur, India}
+    \begin{itemize}
+        \resitem{THESIS TITLE: Multi-Objective Process Planning and Scheduling with Resource Allocation using Multi-Objective Particle Swarm Optimization}
+        \resitem{GUIDE: Dr. A. R. Singh }
+    \end{itemize}
+
+\item
+    \ressubheading{Bachelor of Engineering (\normalfont{Mechanical Engineering)}}{2009 - 2013}{Bhilai Institute of Technology}{Durg, India}
+    \begin{itemize}
+        \resitem{Graduated in Ist Divison}
+    \end{itemize}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Computer Skills}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}[noitemsep]
+	\item Experienced in MATLAB coding
+	\item Proficient in MS-Excel Solver
+	\item Data Visualization with large data sets in Excel
+	\item Familiar with C++ and Python
+    \item Solid grasp over MS-Word and Power-point
+    \item Experienced in creating documents using \LaTeX
+\end{itemize}		
+	
+	  
+  %\begin{center}
+  %\parbox{6.762in}{C++, MATLAB, Python, \LaTeX, MS-Excel}
+  %\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Related Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}[noitemsep]
+
+\item
+    \subheading{Mathematical Modelling}
+    \begin{itemize}
+        \resitem{Mathematical Model based on Scheduling of jobs and allocation of resources}
+      %  \resitem{}
+    %\hfill \linebreak
+    \end{itemize}
+
+\item 
+    \subheading{Algorithms}
+    \vspace{-2pt}
+    \begin{itemize}
+        \resitem{MATLAB coding of Mathematical Models}
+        \resitem{use of MS-Excel to solve single objectives}
+    \end{itemize}
+
+\item
+    \subheading{Optimization}
+    \begin{itemize}
+        \resitem{Particle Swarm Optimization and it's derivatives like MO-PSO}
+        \resitem{Genetic Algorithm and derivatives like NSGA}
+    \end{itemize}
+\end{itemize}
+
+%\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Workshops Attended}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-2pt}
+    \begin{center}\begin{tabular*}{6.6in}{l@{\extracolsep{\fill}}r}
+        \multicolumn{2}{c}{IIIT-DM Jabalpur (OTSEMP-2016) \cftdotfill{\cftdotsep}March,2016 }\\
+        \multicolumn{2}{c}{NIT Raipur (MCDM Short Term Course) \cftdotfill{\cftdotsep}April,2015}\\
+        
+        \vphantom{E}
+\end{tabular*}
+\end{center}\vspace*{-16pt}
+\hfill
+\hfill
+\resheading{Industrial Training}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-2pt}
+    \begin{center}\begin{tabular*}{6.6in}{l@{\extracolsep{\fill}}r}
+        \multicolumn{2}{c}{Wagon Repairing Shop, Raipur \cftdotfill{\cftdotsep}2012 }\\
+        \multicolumn{2}{c}{Bhilai Steel Plant, Bhilai \cftdotfill{\cftdotsep}2010}\\
+       
+        \vphantom{E}
+\end{tabular*}
+\end{center}\vspace*{-16pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Field of Interests}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+Optimization Algorithms, Process Planning, Supply Chain Networks, Data Analysis, Operations Research and Industrial Economics 
+\end{center}
+
+\resheading{Personal Details}
+NAME: \hspace{0.55cm} BIPIN YADU \\
+D.O.B. :\hspace{.6cm}December 1, 1989\\
+Marital\\ 
+Status :\hspace{.65cm} Unmarried\\
+ADDRESS:  House-1/B Street-5\\
+\hspace{2cm}Panchsheel B, Borsi\\
+\hspace{2cm}Durg, C.G. Pin-491001
+
+\end{document}
+              
